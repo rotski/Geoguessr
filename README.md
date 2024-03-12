@@ -1,0 +1,2 @@
+# Geoguessr
+Scripts for geoguessr
