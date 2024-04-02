@@ -1,0 +1,33 @@
+// ==UserScript==
+// @name         Hide Elements in Geoguessr and Make Element Transparent
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Hides specific elements from Geoguessr and makes another element transparent.
+// @author       Your Name
+// @match        https://www.geoguessr.com/*
+// @grant        GM_addStyle
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Function to hide elements and adjust transparency
+    function hideElements() {
+        // CSS rules to hide elements and adjust transparency
+        var css = `
+            .friend-chat-in-game-button_root__RX197,
+            .styles_controlGroup___ArrW {
+                display: none !important;
+            }
+            .game_status__q_b7N.game_statusWithCompassTop__F_unm {
+                opacity: 0.5 !important; /* Adjust the opacity value as needed */
+            }
+        `;
+        // Inject CSS rules
+        GM_addStyle(css);
+    }
+
+    // Call the function to hide the elements
+    hideElements();
+
+})();
