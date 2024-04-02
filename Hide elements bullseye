@@ -1,0 +1,38 @@
+// ==UserScript==
+// @name         Hide Element in Geoguessr Bullseye Mode
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Hides specific elements from the bullseye mode of Geoguessr and adjusts the opacity of another element.
+// @author       Your Name
+// @match        https://www.geoguessr.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Function to hide elements and adjust opacity
+    function hideElements() {
+        // Target elements to be hidden
+        var playerListElement = document.querySelector('.game-panorama_playerList__juUgK');
+        var chatButtonElement = document.querySelector('.friend-chat-in-game-button_root__RX197');
+        var controlGroupElement = document.querySelector('.styles_controlGroup___ArrW');
+        // Target element to be made see-through
+        var statusElement = document.querySelector('.game-panorama_status__ttoc6');
+
+        // Check if the elements exist
+        if (playerListElement && chatButtonElement && controlGroupElement && statusElement) {
+            // Apply CSS to hide the player list element
+            playerListElement.style.display = 'none';
+            // Apply CSS to hide the chat button element
+            chatButtonElement.style.display = 'none';
+            // Apply CSS to hide the control group element
+            controlGroupElement.style.display = 'none';
+            // Apply CSS to make the status element see-through
+            statusElement.style.opacity = '0.5'; // Adjust the opacity value as needed
+        }
+    }
+
+    // Call the function to hide the elements every 500 milliseconds
+    setInterval(hideElements, 500);
+})();
