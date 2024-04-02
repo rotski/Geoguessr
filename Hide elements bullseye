@@ -21,13 +21,22 @@
         var statusElement = document.querySelector('.game-panorama_status__ttoc6');
 
         // Check if the elements exist
-        if (playerListElement && chatButtonElement && controlGroupElement && statusElement) {
+        if (playerListElement) {
             // Apply CSS to hide the player list element
             playerListElement.style.display = 'none';
+        }
+
+        if (chatButtonElement) {
             // Apply CSS to hide the chat button element
             chatButtonElement.style.display = 'none';
+        }
+
+        if (controlGroupElement) {
             // Apply CSS to hide the control group element
             controlGroupElement.style.display = 'none';
+        }
+
+        if (statusElement) {
             // Apply CSS to make the status element see-through
             statusElement.style.opacity = '0.5'; // Adjust the opacity value as needed
         }
