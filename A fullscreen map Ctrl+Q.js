@@ -2,7 +2,7 @@
 // @name         A fullscreen map Ctrl+I
 // @namespace    http://tampermonkey.net/
 // @version      2.5
-// @description  Expand the map to fullscreen in GeoGuessr. Press Ctrl+I to toggle the script. You can change to whatever letter you desire (just make sure it doesnt do anything else in the browser) by editing the "event.key === 'i'" at the bottom of the script.
+// @description  Expand the map to fullscreen in GeoGuessr. Press Ctrl+Q to toggle the script. You can change to whatever letter you desire (just make sure it doesnt do anything else in the browser) by editing the "event.key === 'Q'" at the bottom of the script.
 // @author       Rotski
 // @match        *://www.geoguessr.com/*
 // @grant        none
@@ -80,9 +80,9 @@
         subtree: true
     });
 
-    // Add event listener for Ctrl+I to toggle the script
+    // Add event listener for Ctrl+Q to toggle the script
     document.addEventListener('keydown', function(event) {
-        if (event.ctrlKey && event.key === 'i') {
+        if (event.ctrlKey && event.key === 'q') {
             toggleScript();
         }
     });
