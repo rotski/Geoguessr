@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         A fullscreen map Ctrl+i
+// @name         A fullscreen map Ctrl+I
 // @namespace    http://tampermonkey.net/
 // @version      2.5
-// @description  Expand the map to fullscreen in GeoGuessr. Press Ctrl+I to toggle the script.
-// @author       Your Name
+// @description  Expand the map to fullscreen in GeoGuessr. Press Ctrl+I to toggle the script. You can change to whatever letter you desire (just make sure it doesnt do anything else in the browser) by editing the "event.key === 'i'" at the bottom of the script.
+// @author       Rotski
 // @match        *://www.geoguessr.com/*
 // @grant        none
 // ==/UserScript==
