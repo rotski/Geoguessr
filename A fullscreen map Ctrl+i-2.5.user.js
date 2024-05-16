@@ -2,7 +2,7 @@
 // @name         A fullscreen map Ctrl+i
 // @namespace    http://tampermonkey.net/
 // @version      2.5
-// @description  Expand the map to fullscreen in GeoGuessr and prevent it from becoming opaque or transparent when the mouse is moved off the map. Ensure it goes fullscreen as soon as the page loads and has a black background behind the map. Press Ctrl+I to toggle the script.
+// @description  Expand the map to fullscreen in GeoGuessr and prevent it from becoming opaque or transparent when the mouse is moved off the map. Ensure it goes fullscreen as soon as the page loads. Press Ctrl+I to toggle the script.
 // @author       Your Name
 // @match        *://www.geoguessr.com/*
 // @grant        none
