@@ -5,6 +5,7 @@
 // @description  Toggle between normal mode and full-screen map-only mode in GeoGuessr, ensuring the map stays fully visible and the guess button appears at all times.
 // @author       You
 // @match        https://www.geoguessr.com/*
+// @license      MIT
 // @grant        none
 // ==/UserScript==
 
@@ -139,7 +140,7 @@
         notification.style.fontSize = '14px';
         notification.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
         document.body.appendChild(notification);
-        setTimeout(() => notification.remove(), 3000); // Remove notification after 3 seconds
+        setTimeout(() => notification.remove(), 2000); // Remove notification after 2 seconds
     }
 
     // Inject a toggle button into the page (always in front of map)
