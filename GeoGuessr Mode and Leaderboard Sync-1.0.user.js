@@ -3,7 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Ensure the leaderboard is synced with the selected mode on page load and upon mode changes.
-// @author       Your Name
+// @author       Rotski
+// @license      MIT
 // @match        https://www.geoguessr.com/*
 // @grant        none
 // ==/UserScript==
