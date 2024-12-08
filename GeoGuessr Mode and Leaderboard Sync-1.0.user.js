@@ -58,7 +58,7 @@
         const clickedButton = event.target.closest('.play-setting-button_root__AfG8z.play-setting-button_selected__A0_ik');
         if (clickedButton) {
             console.log('Mode button clicked, updating leaderboard...');
-            setTimeout(checkAndSyncLeaderboard, 300); // Delay to allow any page scripts to process the change
+            setTimeout(checkAndSyncLeaderboard, 100); // Delay to allow any page scripts to process the change
         }
     });
 
@@ -68,6 +68,6 @@
             console.log('Page loaded. Initializing leaderboard sync...');
             setupObserver();
             checkAndSyncLeaderboard(); // Perform an initial check in case the observer setup misses the initial state
-        }, 1000);
+        }, 200);
     });
 })();
