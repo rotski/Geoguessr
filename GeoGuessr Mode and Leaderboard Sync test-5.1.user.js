@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         GeoGuessr Mode and Leaderboard Sync test
+// @name         GeoGuessr Mode and Leaderboard Sync 5.1
 // @namespace    http://tampermonkey.net/
 // @version      5.1
-// @description  Ensure the leaderboard is synced with the selected mode on page load, upon mode changes, and URL changes to /maps/*.
+// @description  Syncs the leaderboard with the selected game mode.
 // @author       Rotski
 // @license      MIT
 // @match        https://www.geoguessr.com/*
