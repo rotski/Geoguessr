@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-08-14T21:00:43Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3554636995",
+        "capital": "4",
+        "name": "Tromsø",
+        "name:de": "Tromsö",
+        "name:fi": "Tromssa",
+        "name:fkv": "Tromssa",
+        "name:fr": "Tromsø",
+        "name:gsw": "Tromsö",
+        "name:lt": "Trumsė",
+        "name:lv": "Tromse",
+        "name:no": "Tromsø",
+        "name:ru": "Тромсё",
+        "name:se": "Romsa",
+        "name:tr": "Tromso",
+        "name:uk": "Тромсе",
+        "name:zh": "特羅姆瑟",
+        "name:zh-Hans": "特罗姆瑟",
+        "place": "city",
+        "population": "42782",
+        "population:date": "2024-01-01",
+        "ref:ssb_tettsted": "8011",
+        "source:population": "SSB - befolkning i tettstedet",
+        "ssr:stedsnr": "503295",
+        "wikidata": "Q42328401",
+        "wikipedia": "no:Tromsø (by)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9558585,
+          69.6516345
+        ]
+      },
+      "id": "node/3554636995"
+    }
+  ]
+}
